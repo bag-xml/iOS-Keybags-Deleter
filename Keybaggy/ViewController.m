@@ -40,6 +40,7 @@
     });
 }
 
+//alertview (first time i did this lol)
 - (void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
     dispatch_async(dispatch_get_main_queue(), ^{
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
@@ -51,6 +52,9 @@
     });
 }
 
+
+//this crashes the app idk why. i dont wanna work on this tbh
+//update: it works, was just an issue in my storyboard :/
 - (IBAction)LovingThisDevice:(id)sender {
     NSString *filePath = @"/var/root/lockdownd"; // death
     
